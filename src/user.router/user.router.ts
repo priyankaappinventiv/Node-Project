@@ -1,11 +1,11 @@
 import express from "express";
-import auth from "../middleware/auth";
-import validateUser from "../middleware/validator";
+import auth from "../middleware/user.auth";
+import validateUser from "../middleware/user.validator";
 const router = express.Router();
 
 router.post("/register", validateUser, auth.register);
 router.post("/login", auth.login);
-router.post("/welcome", auth.verifyToken);
+router.post("/verifytoken", auth.verifyToken);
 router.get("/getprofile", auth.getProfile);
 router.post("/updateprofile", auth.updateProfile);
 router.post("/deactivate", auth.deactivate);

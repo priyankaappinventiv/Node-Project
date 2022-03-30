@@ -1,17 +1,8 @@
-//Schema
+
 import mongoose from "mongoose";
 import { Schema, model, connect } from "mongoose";
+import userdetail from "./user.interface";
 
-// 1. Create an interface representing a document in MongoDB.
-interface userdetail {
-  username: String;
-  password: string;
-  firstname: String;
-  lastname: String;
-  gmail: String;
-  phoneNumber: Number;
-  is_active: Boolean;
-}
 const Model_Name = "userdetail";
 
 const userdetailSchema = new Schema<userdetail>(

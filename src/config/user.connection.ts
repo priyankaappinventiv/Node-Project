@@ -1,5 +1,9 @@
 import mongoose from "mongoose";
-mongoose.connect("mongodb://localhost:27017/person");
+import * as dotenv from "dotenv";
+dotenv.config();
+const url=String(process.env.URL)
+mongoose.connect(url);
+
 
 var dbConnect = mongoose.connection;
 
