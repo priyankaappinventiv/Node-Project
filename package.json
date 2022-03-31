@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dev": "nodemon --config nodemon.json src/app.ts",
+  "dev": "nodemon --config nodemon.json src/index.ts",
   "scripts": {
-    "dev": "nodemon --config nodemon.json src/app.ts",
+    "dev": "nodemon --config nodemon.json src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
